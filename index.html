@@ -11,7 +11,7 @@
     <main>
       <header>
         <h1>Library</h1>
-        <form class="new-form">
+        <form id="new-form">
           <input
             type="text"
             class="title-input"
@@ -29,18 +29,16 @@
           <input
             type="number"
             name="Pages"
-            class="pages-inpt"
+            class="pages-input"
             placeholder="How many pages?"
           />
-
-          <input type="checkbox" name="Read" class="read-input" />
-          <input type="submit" />
+          <input type="submit" class="submit-button" value="submit" />
         </form>
       </header>
       <section>
         <h2>Added books</h2>
         <div id="card-container">
-          <div class="card">
+          <!-- <div class="card">
             <div class="card-content">
               <input type="text" value="Title of book" readonly />
               <input type="text" value="Author of book" readonly />
@@ -50,10 +48,10 @@
                 <button class="remove">Remove</button>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
     </main>
-    <script src="/JS/main.js"></script>
+    <script src="JS/main.js"></script>
   </body>
 </html>

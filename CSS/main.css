@@ -7,6 +7,8 @@
     --dark:rgb(80, 80, 80);
     --darker:rgb(50, 50, 50);
     --red:rgb(173, 12, 44);
+    --purple:rgb(117, 12, 173);
+
 
 }
 body{
@@ -39,17 +41,24 @@ h1{
     font-size: 4rem;
     color: var(--red);
 }
-.new-form{
+#new-form{
     display: flex;
     flex-direction: column;
     gap: .5rem;
     width: 100%;
 }
-.new-form>input{
+#new-form>input{
     padding: 1.25rem;
     font-size: 1.5rem;
     background-color: var(--dark);
     border-radius: 1.5rem;
+}
+.submit-button{
+    transition: all 0.3s ease-in-out;
+}
+.submit-button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px var(--red);
 }
 
 section{
@@ -60,12 +69,18 @@ h2{
     font-size: 2.5rem;
     font-weight: 400;
 }
+#card-container{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+justify-items: center;
+row-gap: 1rem;
+}
 
 .card{
     display: flex;
     justify-content: center;
     background-color: var(--darker);
-    width: min(40vw,70rem);
+    width: min(20vw,70rem);
     padding: 2rem;
     border-radius: 1.5rem;
 }
@@ -80,6 +95,8 @@ h2{
     border-radius: .5rem;
     padding: .25rem;
     text-align: center;
+    width: 100%;
+    flex: 1 1 0%;
 }
 .inputs{
     display: flex;
